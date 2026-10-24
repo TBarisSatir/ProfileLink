@@ -1,0 +1,8 @@
+# Add whatever your stack generates below (dependencies, build output, etc).
+.env
+.DS_Store
+.idea/
+target/
+*.iml
+profiles.json
+cache.json

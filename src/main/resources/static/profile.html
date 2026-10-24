@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>Public Profile | Profile Link</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+<div class="background-orb orb-one"></div>
+<div class="background-orb orb-two"></div>
+
+<main class="page-shell profile-page">
+
+    <header class="brand-header">
+        <div class="brand-mark">P</div>
+        <div>
+            <span class="brand-name">PROFILE LINK</span>
+            <span class="brand-subtitle">PUBLIC PROFILE</span>
+        </div>
+    </header>
+
+    <section id="profile-card" class="public-profile-card hidden">
+
+        <div class="profile-top-row">
+
+            <div class="public-label">
+                <span class="live-dot"></span>
+                PUBLIC PROFILE
+            </div>
+
+            <div class="profile-status">
+                Active
+            </div>
+
+        </div>
+
+        <div class="identity-block">
+
+            <div class="avatar-shell">
+                <span id="profile-initial">P</span>
+            </div>
+
+            <div>
+                <h1 id="profile-name"></h1>
+                <p id="profile-headline" class="profile-headline"></p>
+            </div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <section class="profile-section">
+
+            <p class="section-label">EXPERTISE</p>
+
+            <div id="skills-list" class="skills-list"></div>
+
+        </section>
+
+        <div class="profile-meta">
+
+            <div>
+                <span class="meta-label">PROFILE ID</span>
+                <span id="profile-id" class="meta-value"></span>
+            </div>
+
+            <div class="profile-meta-right">
+                <span class="meta-label">SHAREABLE</span>
+                <span class="meta-value">Yes</span>
+            </div>
+
+        </div>
+
+        <a href="/" class="secondary-link profile-create-link">
+            Create your own profile
+            <span>→</span>
+        </a>
+
+    </section>
+
+    <section id="not-found" class="not-found-card hidden">
+
+        <div class="not-found-symbol">?</div>
+
+        <span class="eyebrow">PROFILE LOOKUP</span>
+
+        <h1>Profile not found.</h1>
+
+        <p>
+            The profile ID does not exist or the link is no longer valid.
+        </p>
+
+        <a href="/" class="primary-link">
+            Create a new profile
+        </a>
+
+    </section>
+
+</main>
+
+<script src="/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>Create Profile | Profile Link</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+<div class="background-orb orb-one"></div>
+<div class="background-orb orb-two"></div>
+
+<main class="page-shell">
+
+    <header class="brand-header">
+        <div class="brand-mark">P</div>
+        <div>
+            <span class="brand-name">PROFILE LINK</span>
+            <span class="brand-subtitle">SHAREABLE PROFILES</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <span class="eyebrow">SHAREABLE IDENTITY</span>
+
+        <h1>
+            Create a profile
+            <span>worth sharing.</span>
+        </h1>
+
+        <p>
+            Add the essentials, generate a public profile,
+            and share it through a simple link.
+        </p>
+    </section>
+
+    <section class="profile-form-card">
+
+        <form id="profile-form">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+
+                <div class="input-shell">
+                    <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Turgut Barış Satır"
+                            required
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="headline">Headline</label>
+
+                <div class="input-shell">
+                    <input
+                            id="headline"
+                            name="headline"
+                            type="text"
+                            placeholder="Software Engineer"
+                            required
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label-row">
+                    <label for="skills">Skills</label>
+                    <span>Comma separated</span>
+                </div>
+
+                <div class="input-shell">
+                    <input
+                            id="skills"
+                            name="skills"
+                            type="text"
+                            placeholder="Java, Spring Boot, SQL"
+                            required
+                    >
+                </div>
+            </div>
+
+            <button id="submit-button" type="submit" class="primary-button">
+                <span id="submit-text">Generate profile</span>
+                <span class="button-arrow">↗</span>
+            </button>
+
+        </form>
+
+        <div id="result" class="result-panel hidden">
+
+            <div class="success-indicator">
+                <span class="success-dot"></span>
+                Profile ready
+            </div>
+
+            <p class="result-title">Your shareable link</p>
+
+            <div class="share-link-shell">
+                <input id="share-link" readonly>
+
+                <button id="copy-button" type="button">
+                    Copy
+                </button>
+            </div>
+
+            <a id="view-profile" class="secondary-link">
+                Open public profile
+                <span>→</span>
+            </a>
+
+        </div>
+
+        <p id="error-message" class="error-message hidden"></p>
+
+    </section>
+
+    <footer class="page-footer">
+        <span>Built by Turgut Barış Satır</span>
+        <span>github.com/TBarisSatir</span>
+    </footer>
+
+</main>
+
+<script src="/app.js"></script>
+
+</body>
+</html>
